@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>JSON</h1>
+    <p>JavaScript Object Notation</p>
+
+
+    <script>
+
+        // JSON is a text format for storing and exchanging data.
+        // JSON stands for JavaScript Object Notation.
+        // JSON syntax is similar to JavaScript object syntax.
+        // JSON is language independent.
+
+        // ---------------------------------------------------
+
+        let student = {
+            name: "Pooja",
+            surname: "Patil",
+            age: 24,
+            gender: "Female"
+        };
+
+        console.log(student);
+        console.log(typeof (student));       // object
+
+        console.warn("______ Object to JSON_________");
+
+        let jsonData = JSON.stringify(student);
+
+        console.log(jsonData);
+        console.log(typeof (jsonData));      // string
+
+        console.log(jsonData.toUpperCase());
+        console.log(jsonData.toLowerCase());
+
+        let newJsonData = jsonData.replace("Pooja", "Pallavi");
+        console.log(newJsonData);
+
+        console.warn("______ JSON To Object_________");
+
+        let objData = JSON.parse(newJsonData);
+
+        console.log(objData);
+        console.log(typeof(objData));
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

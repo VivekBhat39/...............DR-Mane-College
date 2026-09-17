@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>map() - Array Iteration</h1>
+
+    <script>
+
+        // let fruits = ["Apple", "Mango", "Orange", "Kiwi", "Chiku"];
+        // let newFruits = [];
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     // console.log(fruits[i]);
+        //     newFruits.push(fruits[i]);
+        // };
+
+        // console.log(fruits);
+        // console.log(newFruits);
+
+        // ------------------------ Using map method --------------------
+
+        // Syntax :-
+        // Array.map((currentValue, index, arr) => {
+
+        // })
+
+        let fruits = ["Apple", "Mango", "Orange", "Kiwi", "Chiku"];
+
+        let newFruits = fruits.map((currentValue, index, arr) => {
+            // console.log(currentValue, index, arr);
+            return currentValue;
+        });
+
+        console.log(fruits);
+        console.log(newFruits);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

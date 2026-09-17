@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Cookies</h1>
+
+    <ul>
+        <li>cookies - 4kb</li>
+        <li>localStoarge - 10mb</li>
+        <li>sessionStorage - 5mb</li>
+    </ul>
+
+    <button onclick="clearLocalData()">Clear localStoarge Data</button>
+    <br><br>
+    <button onclick="clearSessionData()">Clear sessionStorage Data</button>
+
+    <script>
+
+        // 1) localStorage
+
+
+        // // How to store data in localStorage
+        // localStorage.setItem("name", "Mayuri");
+        // localStorage.setItem("name", "Sanika");
+
+        // localStorage.setItem("product", "Laptop");
+
+        // // How to access data from localStorage
+        // let name = localStorage.getItem("name");
+        // let product = localStorage.getItem("product");
+
+        // console.log(name);
+        // console.log(product);
+
+        // // Delete Data
+        // function clearLocalData() {
+        //     // To remove Sepcific Data
+        //     // localStorage.removeItem("product");
+
+        //     // To remove all localStorage Data
+        //     localStorage.clear();
+        // };
+
+        // ---------------------------------------------------
+        // 2) sessionStorage
+
+        // How to store data in sessionStorage
+        sessionStorage.setItem("name", "Nikhil");
+        sessionStorage.setItem("name", "Aditya");
+
+        sessionStorage.setItem("product", "Mobile");
+
+        // How to access data from sessionStorage
+        let name = sessionStorage.getItem("name");
+        let product = sessionStorage.getItem("product");
+
+        console.log(name);
+        console.log(product);
+
+        // Delete Data
+        function clearSessionData() {
+            // To remove Sepcific Data
+            // sessionStorage.removeItem("name");
+
+            // To remove all sessionStorage Data
+            sessionStorage.clear();
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

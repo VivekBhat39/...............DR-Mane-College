@@ -32,6 +32,9 @@ function Header() {
                             <li class="nav-item">
                                 <Link to={'/counter'} class="nav-link">Counter</Link>
                             </li>
+                            <li class="nav-item">
+                                <Link to={'/get-input-value'} class="nav-link">GetInput-Value</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

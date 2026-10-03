@@ -1,0 +1,37 @@
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './components/Home.jsx';
+import Style from './components/Style.jsx';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
+
+import './App.css';
+import Gallery from './components/Gallery.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+function App() {
+  return (
+    <>
+      <div className="App">
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/gallery' element={<Gallery />} />
+            <Route path='/style' element={<Style />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </div>
+    </>
+  )
+};
+
+export default App;
+
+
+// 1) React Routing
+// react-router-dom
+// install - npm i react-router-dom

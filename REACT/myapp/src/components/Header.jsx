@@ -26,6 +26,12 @@ function Header() {
                             <li class="nav-item">
                                 <Link to={'/contact'} class="nav-link">Contact</Link>
                             </li>
+                            <li class="nav-item">
+                                <Link to={'/state'} class="nav-link">State</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to={'/counter'} class="nav-link">Counter</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -8,6 +8,8 @@ import Contact from './components/Contact.jsx';
 import './App.css';
 import Gallery from './components/Gallery.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import State from './components/State.jsx';
+import Counter from './components/Counter.jsx';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path='/gallery' element={<Gallery />} />
             <Route path='/style' element={<Style />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/state' element={<State />} />
+            <Route path='/counter' element={<Counter />} />
           </Routes>
           <Footer />
         </BrowserRouter>
